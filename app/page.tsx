@@ -1,8 +1,8 @@
 import { revalidatePath } from "next/cache";
 
-import { AuthGetCurrentUserServer, cookiesClient } from "../utils/amplify-utils";
+import { AuthGetCurrentUserServer, cookiesClient } from "@/utils/amplify-utils";
 
-import Logout from "../components/Logout";
+import Logout from "@/components/Logout";
 
 async function App() {
   const user = await AuthGetCurrentUserServer();
